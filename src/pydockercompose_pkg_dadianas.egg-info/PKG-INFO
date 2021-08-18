@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pydockercompose-pkg-dadianas
+Version: 0.0.1
+Summary: Package to generate docker compose files.
+Home-page: https://github.com/DadiAnas/pydockercompose
+Author: Anas Dadi
+Author-email: dadi.anas@hotmail.fr
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/DadiAnas/pydockercompose/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pydockercompose 
+## Description
+
+This package is a python package for generating dockercompose file.
+
+
