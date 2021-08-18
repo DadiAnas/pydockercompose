@@ -2,8 +2,8 @@ LICENSE
 README.md
 pyproject.toml
 setup.cfg
-src/pydockercompose_package/DockerCompose.py
-src/pydockercompose_package/__init__.py
+src/pydockercompose/DockerCompose.py
+src/pydockercompose/__init__.py
 src/pydockercompose_pkg_dadianas.egg-info/PKG-INFO
 src/pydockercompose_pkg_dadianas.egg-info/SOURCES.txt
 src/pydockercompose_pkg_dadianas.egg-info/dependency_links.txt

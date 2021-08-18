@@ -1,1 +1,1 @@
-pydockercompose_package
+pydockercompose
