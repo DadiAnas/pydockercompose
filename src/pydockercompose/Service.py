@@ -1,6 +1,7 @@
 class Service:
-    def __init__(self, container_name="", image="", build="", restart="", ports=[], networks=[], volumes=[],
-                 environments=[], depends_on=[], commands=[], links=[]):
+    def __init__(self, container_name: str = "", image: str = "", build: str = "", restart: str = "", ports: list = [],
+                 networks: list = [], volumes: list = [],
+                 environments: list = [], depends_on: list = [], commands: str = "", links=[], network_mode: str=""):
         self._image = image
         self._container_name = container_name
         self._depends_on = depends_on
@@ -9,11 +10,12 @@ class Service:
         self._volumes = volumes
         self._ports = ports
         self._environment = environments
-        self._command = commands
+        self._commands = commands
         self._networks = networks
         self._ulimits = {}
         self._service = {}
         self._links = links
+        self._network_mode = network_mode
 
     def set_image(self, image):
         self._image = image
@@ -45,8 +47,11 @@ class Service:
     def add_environment_variable(self, variable):
         self._environment.append(variable)
 
-    def add_command(self, command):
-        self._command = command
+    def set_commands(self, command):
+        self._commands = command
+
+    def set_network_mode(self, network_mode):
+        self._network_mode = network_mode
 
     def clean_service(self):
         self._service = {
@@ -59,7 +64,10 @@ class Service:
             "volumes": self._volumes,
             "networks": self._networks,
             "ulimits": self._ulimits,
-            "links": self._links
+            "links": self._links,
+            "depends_on": self._depends_on,
+            "command": self._commands,
+            "network_mode": self._network_mode,
         }
         filtered = {k: v for k, v in self._service.items() if v not in (None, [], "", {})}
         self._service.clear()

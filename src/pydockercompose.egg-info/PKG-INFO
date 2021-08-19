@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
-Name: pydockercompose-pkg-dadianas
-Version: 0.0.2
+Name: pydockercompose
+Version: 0.0.41
 Summary: Package to generate docker compose files.
 Home-page: https://github.com/DadiAnas/pydockercompose
 Author: Anas Dadi
@@ -38,6 +38,8 @@ It contains two classes :
     *   networks
     *   ulimits
     *   links
+    *   depends_on
+    *   command
 
 To find out more about these parameters, you can check [docker-compose](https://docs.docker.com/compose/compose-file/compose-file-v3/) documentation.
 

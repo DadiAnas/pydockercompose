@@ -21,6 +21,9 @@ It contains two classes :
     *   networks
     *   ulimits
     *   links
+    *   depends_on
+    *   command
+    *   network_mode
 
 To find out more about these parameters, you can check [docker-compose](https://docs.docker.com/compose/compose-file/compose-file-v3/) documentation.
 

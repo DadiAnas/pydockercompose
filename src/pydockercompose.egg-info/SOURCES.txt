@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pydockercompose/DockerCompose.py
+src/pydockercompose/Service.py
+src/pydockercompose/__init__.py
+src/pydockercompose.egg-info/PKG-INFO
+src/pydockercompose.egg-info/SOURCES.txt
+src/pydockercompose.egg-info/dependency_links.txt
+src/pydockercompose.egg-info/top_level.txt
