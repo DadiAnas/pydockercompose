@@ -3,7 +3,7 @@
 
 This package is a python package for generating Docker Compose file.
 It contains two classes :
-*   DockerCompose : which represent represent docker-compose file.
+*   DockerCompose : It represents docker-compose file.
     In this version, it supports adding the following parameters:
        -  version
        -  services
@@ -11,9 +11,9 @@ It contains two classes :
        -  networks
 *   Service: This class represent docker compose service. 
     In this version, Service class supports adding the following parameters:
+    *   container_name
     *   image
     *   build
-    *   container_name
     *   environment
     *   restart
     *   ports
@@ -23,6 +23,7 @@ It contains two classes :
     *   links
     *   depends_on
     *   command
+    *   entrypoint
     *   network_mode
 
 To find out more about these parameters, you can check [docker-compose](https://docs.docker.com/compose/compose-file/compose-file-v3/) documentation.
